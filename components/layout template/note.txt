@@ -1,0 +1,2 @@
+This is the basic layout of our pages.
+Most pages will follow this layouts.

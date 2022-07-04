@@ -1,0 +1,3 @@
+This is a collapsable searchbar.
+To make it non-collapsable, do the following steps:
+1. change .searchText div width "30rem" and add padding of "0 3rem".

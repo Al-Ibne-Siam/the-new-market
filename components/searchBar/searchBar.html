@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="searchBar.css">
+    <title>Search Bar</title>
+</head>
+<body>
+        <form class="searchBar" id="search1" autocomplete="off">
+            
+            <input class="searchText" id="search1-text" type="text" name="searchkey" 
+            placeholder="Search Shops Or Products" spellcheck="false" onKeyUp="showResults(this.value)">
+
+            <span class="emptySearchInput" id="search1-emptyInput" onclick="emptySearchbox()"></span>
+
+            <a href="https://www.google.com/" class="searchBtn disable" id="search1-btn">
+                <img src="search icon.svg" alt="" class="searchIcon">
+            </a>
+        </form>
+        <div class="suggestion" id="search1-suggestion"></div>
+
+    <script src="searchBar.js"></script>
+</body>
+</html>

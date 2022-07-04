@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica&family=Poppins&display=swap');
+
+html{
+    font-size: 10px;
+    background-color: rgba(153, 186, 171, 0.7);
+}
+
+.search {
+    display: inline-block;
+    width: max-content;
+}
+
+.searchBar{
+    background-color: rgba(50, 65, 90, 0.2);
+    height: 3rem;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    width: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchBtn{
+   float: right;
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+   padding: 1rem;
+}
+
+.searchIcon {
+    width: 2rem;
+}
+
+.searchText{
+    border: none;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    outline: none;
+    float: left;
+    color: white;
+    font-size: 1.4rem;
+    transition: 0.5s;
+    line-height: 5rem;
+    width: 0;
+}
+
+.searchText::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.searchBar:hover > .searchText, 
+.searchBar > .searchText:focus {
+    width: 30rem;
+    padding: 0 3rem;
+}
+
+.suggestion {
+    position: absolute;
+    margin-top: 1rem;
+    pad: 1rem;
+    display: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(50, 65, 90, 0.15);
+}
+
+.suggestion li {
+    list-style: none;
+}
+
+.suggestion ul li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.noCollapse {
+    width: 30rem;
+    padding: 0 3rem;
+}
+
+.disable{
+    pointer-events: none;
+}
+
+.emptySearchInput{
+    width: 1rem;
+    cursor: pointer;
+}
+
+#search-x{
+    width: 1rem;
+    height: auto;
+}

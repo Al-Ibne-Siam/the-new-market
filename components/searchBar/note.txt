@@ -1,0 +1,3 @@
+***********************************************************************
+JS implementation is done by id, so any change in html id must followed
+up with changes in JS.
